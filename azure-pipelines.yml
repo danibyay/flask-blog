@@ -12,6 +12,8 @@ pool:
 steps:
 - script: sudo apt-get install python3.6
   displayName: 'install python 3'
+- script: sudo apt-get install python3-venv
+  displayName: 'install venv'
 - script: python3 -m venv venv
   displayName: 'create the virtual env'
 - script: source venv/bin/activate
