@@ -11,14 +11,15 @@ pool:
 
 steps:
 - script: sudo apt-get install python3.6
-#- script: python3 -m venv venv
-#  displayName: 'create the virtual env'
-#- script: source venv/bin/activate
-#  displayName: 'activate the virtual env'
-#- script: pip install flask
-#  displayName: 'Install flask'
-#- script: export FLASK_APP=microblog.py
-#  displayName: 'Set the FLASK_APP environment variable.'
-#- script: flask run
-#  displayName: 'Run the app'
+  displayName: 'install python 3'
+- script: python3 -m venv venv
+  displayName: 'create the virtual env'
+- script: source venv/bin/activate
+  displayName: 'activate the virtual env'
+- script: pip install flask
+  displayName: 'Install flask'
+- script: export FLASK_APP=microblog.py
+  displayName: 'Set the FLASK_APP environment variable.'
+- script: flask run
+  displayName: 'Run the app'
 
