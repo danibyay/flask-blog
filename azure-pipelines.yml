@@ -16,12 +16,16 @@ steps:
   displayName: 'install venv'
 - script: python3 -m venv venv
   displayName: 'create the virtual env'
-- script: source venv/bin/activate
+- script:  |
+    source venv/bin/activate
+    pip install flask
+    export FLASK_APP=microblog.py
+    flask run
   displayName: 'activate the virtual env'
-- script: pip install flask
-  displayName: 'Install flask'
-- script: export FLASK_APP=microblog.py
-  displayName: 'Set the FLASK_APP environment variable.'
-- script: flask run
-  displayName: 'Run the app'
+#- script: pip install flask
+#  displayName: 'Install flask'
+#- script: export FLASK_APP=microblog.py
+#  displayName: 'Set the FLASK_APP environment variable.'
+#- script: flask run
+#  displayName: 'Run the app'
 
