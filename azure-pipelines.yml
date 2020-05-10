@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: apt-get install python3.6
+- script: sudo apt-get install python3.6
 #- script: python3 -m venv venv
 #  displayName: 'create the virtual env'
 #- script: source venv/bin/activate
