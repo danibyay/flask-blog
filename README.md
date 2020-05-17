@@ -5,8 +5,10 @@ Create a virtual env with python 3
 Activate the virtual env 
 > source venv/bin/activate
 
-Install flask
+Install flask & dependencies
 > pip install flask
+
+> pip install flask-wtf
 
 Set the FLASK_APP environment variable.
 > export FLASK_APP=microblog.py
