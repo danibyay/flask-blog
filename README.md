@@ -10,6 +10,8 @@ Install flask & dependencies
 
 > pip install flask-wtf
 
+> pip install flask-sqlalchemy
+
 Set the FLASK_APP environment variable.
 > export FLASK_APP=microblog.py
 
